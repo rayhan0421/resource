@@ -1,0 +1,23 @@
+  <script>
+      
+var Module = (function () {
+
+  var _privateMethod = function (ints) {
+   console.log(ints);
+  };
+
+  var publicMethod = function (ints) {
+    _privateMethod(ints);
+  };
+  
+  return {
+    publicMethod: publicMethod
+  };
+
+})();
+
+Module.publicMethod(2545);
+
+Module.publicMethod(45);
+
+    </script>

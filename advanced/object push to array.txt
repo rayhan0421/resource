@@ -1,0 +1,10 @@
+
+function(obj){
+
+var sub = [];
+
+
+sub.push(obj);
+
+// find obj with indexof()
+}

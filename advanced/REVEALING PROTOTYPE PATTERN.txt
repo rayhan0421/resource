@@ -1,0 +1,29 @@
+ <script>
+      
+var TeslaModelS = function() {
+  this.numWheels    = 4;
+  this.manufacturer = 'Tesla';
+  this.make         = 'Model S';
+}
+
+TeslaModelS.prototype = function() {
+
+  var go = function() {
+    console.log("gooo");
+  };
+
+  var stop = function() {
+     console.log("stopppps");
+  };
+
+  return {
+    pressBrakePedal: stop,
+    pressGasPedal: go
+  }
+
+}();
+t = new TeslaModelS();
+
+t.pressBrakePedal();
+
+    </script>

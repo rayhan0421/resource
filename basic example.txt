@@ -1,0 +1,15 @@
+ <script>
+ var revealed = function(){
+   var a = [1,2,3];
+   function abc(){
+     return (a[0]*a[1])+a[2];
+   }
+//call below function not above function
+   return {
+      name: 'revealed',
+      abcfn: abc
+   }
+}();
+
+console.log(revealed.abcfn());
+ </script>

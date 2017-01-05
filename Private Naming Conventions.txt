@@ -1,0 +1,20 @@
+# nothing just _ character 
+
+<script>
+var Module = (function () {
+
+  var _privateMethod = function () {
+    // private stuff
+  };
+
+  var publicMethod = function () {
+    _privateMethod();
+  };
+  
+  return {
+    publicMethod: publicMethod
+  };
+
+})();
+
+</script>
